@@ -1,11 +1,13 @@
 #include<stdio.h> 
 #include<stdlib.h>
+#include<time.h>
 
 
 int main() { 
     printf("******Hello Everyone******\n");
     printf("Welcome to the NUMGUESS a Number Guessing game\n");
     puts("Created bu Devansh Khetan");
+    srand(time(0));
     int randomNumber = rand() % 100 +1;
     int input;
     while(input!=randomNumber){
